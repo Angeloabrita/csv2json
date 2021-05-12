@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de CSV para JSON</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/logoico.png" type="image/x-icon">
+</head>
+<body>
+    <header class=" row header">
+    <div class="col-3">
+        <img src="assets/monkblue.png" class="logo" alt="monje">
+    </div>
+      <div class="col-6">
+     <h1>Conversor de CSV para Json</h1>
+     <p>Um simples conversor de CSV para Json e outros formatos</p>
+        
+    <a href="https://facebook.com/agtastudios"> <img class="logo" src="assets/logoico.png" alt="logo agta studios"></a>
+    </div>  
+    <div class="col-3">
+        <img src="assets/monkblue.png" class="logo" alt="monje">
+    </div>
+    
+    </header>
+    <div class="row">
+
+        <div class="col-5 content" style="background-color: #19CFFA; height: 350px;">
+            <label for="file-upload" class="custom-file-upload">
+                <i class="fa fa-cloud-upload"></i> Adicionar arquivo
+            </label>
+            <input id="file-upload" type="file"/>
+            <p id="file-name"></p>
+           
+           
+                <h3>Conteudo do arquivo:</h3>
+               <pre id="file-content"></pre>
+             
+        </div>
+        <div class="col-2" style="background-color: #E07616; height: 350px;">
+            
+                <label for="Qual formato converter">CONVERTER PARA:</label>
+                <select  id="formato">
+                  <option value="JSON">JSON</option>
+                  <option value="CSV">CSV</option>
+                  <option value="XML">XML</option>  
+                </select>
+                <br><br>
+                <input type="submit" value="CONVERTER" id="btn-converter">
+                <br><br>
+                <input type="submit" value="RESETAR" id="btn-reset">
+                
+              
+               
+        </div>
+        <div class="col-5 content" style="background-color:#11AD75; height: 350px;">
+         <p>Dados convertido</p> 
+         <form id="form1">  </form>  
+         <pre id="file-out" class="content"></pre>
+        
+        
+        
+        </div>
+    </div>
+        
+
+       
+</body>
+<footer class="row">
+    <div class="col-4" >
+        <h3>SOBRE</h3>
+        <a href="https://facebook.com/agtastudios">AGTA Studio</a>
+        <p>Um indie desenvolvedor de apps e games</p>
+    </div>
+    <div class="col-4">
+       <a href="https://facebook.com/agtastudios"><img class="logo_footer" src="assets/logoico.png" alt="logo AGTA Studios"></a> 
+    </div>
+    <div class="col-4" >
+    <p>A ignorância do saber é sempre achar que sabe -Eu mesmo!</p>
+    <div class="row">
+        <div class="col-4">
+            <a href="https://facebook.com/agtastudios">facebook</a>
+        </div>
+        <div class="col-4">
+            <a href="https://twitter.com/agtastudios">twitter</a>
+        </div>
+        <div class="col-4">
+            <a href="https://www.youtube.com/channel/UCuda-EA8PgcKFjZgXFyGNmg">Youtube</a>
+        </div>
+   
+    </div>
+    </div>
+   
+
+</footer>
+<script src="app.js"></script>
+</html>
